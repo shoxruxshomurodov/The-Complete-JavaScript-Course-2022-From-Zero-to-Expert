@@ -245,3 +245,69 @@ ines`);
  */
 
 //****---Taking Decision if-else Statements---****/ //
+/*
+const age = 15;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+  console.log("Muhtarama can start driving license 🚗");
+} else {
+  const yearsLeft = 18 - age;
+  console.log(
+    `Muhtarama can't start driving license 🚗 , she is young. Wait another ${yearsLeft} years😥`
+  );
+}
+
+const birthYear = 1998;
+
+let century;
+if (birthYear < 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century + " " + "century");
+ */
+/*
+Codding Challenge #2🔥
+
+const shoxruxsMass = 90;
+const shoxruxsHeight = 1.76;
+
+const shahbozsMass = 105;
+const shahbozHeight = 1.86;
+
+const shoxruxsBMI = shoxruxsMass / shoxruxsHeight ** 2;
+const shahbozsBMI = shahbozsMass / shahbozHeight ** 2;
+
+if (shoxruxsBMI > shahbozsBMI) {
+  console.log(
+    `Shoxruxs BMI is ${shoxruxsBMI} grater than Shahbozs BMI ${shahbozsBMI}`
+  );
+} else {
+  console.log(
+    `Shahbozs BMI is ${shahbozsBMI} grater than Shoxruxs BMI ${shoxruxsBMI}`
+  );
+}
+*/
+
+//****---Type Conversion and Coersion---****//
+
+/*
+Type Conversion = is manually convert type from one type to another
+Coersion = is automaticly convert type behind the scenes  
+*/
+
+const inputYear = "1998";
+console.log(Number(inputYear), inputYear);
+console.log(inputYear + 18); //199818
+console.log(Number(inputYear) + 18); //2016
+
+console.log(Number("Shoxrux")); //NaN string word can't convert number
+console.log(typeof NaN); //Type of NaN is Not a Number
+
+console.log(String(23) + 13); //Convert 23 to String output is 2313
+
+//Type coercion
+console.log("I am " + 23 + " years old.");
+console.log("23" - "13" - 3); //convert to number automatically
