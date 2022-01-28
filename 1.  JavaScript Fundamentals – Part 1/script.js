@@ -72,7 +72,7 @@ let myCurrnetJob = "Teacher";
 */
 
 //-----Data Types-----//
-
+//Objects (Reference) Data types
 // 7 Primitive Data types
 /*
 1-> Number = Floating Points Number 👉 used for decimal and integers
@@ -88,5 +88,22 @@ let myCurrnetJob = "Teacher";
 the data types of the value stored in a variable. Instead, data types are 
 determined automatically
  */
+//Single Line Comment
+/*
+Multi
+Line
+Comment
+*/
+/*
+//JavaScript executes from top to bottom
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
 
-//Objects (Reference) Data types
+console.log(typeof javascriptIsFun); //Boolean
+console.log(typeof 12); //Number
+console.log(typeof "Shoxrux"); //String
+javascriptIsFun = "Yes!"
+ */
+
+let year;
+console.log(year);
