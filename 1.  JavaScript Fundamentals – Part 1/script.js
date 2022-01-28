@@ -103,7 +103,145 @@ console.log(typeof javascriptIsFun); //Boolean
 console.log(typeof 12); //Number
 console.log(typeof "Shoxrux"); //String
 javascriptIsFun = "Yes!"
- */
 
 let year;
 console.log(year);
+console.log(typeof year);
+
+year = 1998;
+console.log(year);
+console.log(typeof year);
+console.log(typeof null);
+let age = 23;
+console.log(age);
+const birthYear = 1998;
+console.log(birthYear);
+
+let age; //accepted
+
+// with declare const not accepted
+// const job
+
+//Var is old way!!! priorty of ES6
+var job = "Programmer";
+job = "teacher";
+console.log(job);
+
+//Trible!!!☝
+// lastName = "Shomurodov";
+// console.log(lastName);
+
+//****---Basic Operators---****/ //
+/*
+//Math Operators
+const year = 2030;
+const ageShoxrux = year - 1998;
+const ageMuhtarama = year - 2003;
+console.log(ageShoxrux, ageMuhtarama);
+
+console.log(ageShoxrux * 2, ageShoxrux / 10, 2 ** 3);
+//2**3 explanation operator means 2 to the power of 3 = 2*2*2
+const firstName = "Shoxrux";
+const lastName = "Shomurodov";
+console.log(firstName + " " + lastName);
+
+//Assignment operator (=)
+let x = 98 + 8;
+console.log(x);
+x += 10; //x = x + 10=116;
+x *= 4; //x = x * 4 = 464;
+x++; // x = x + 1 = 465;
+x--; // x = x - 1 = 464;
+console.log(x);
+
+//Comparision Operators
+/*
+<
+>
+>=
+<=
+*/
+/*
+console.log(ageShoxrux > ageMuhtarama); //true
+console.log(ageShoxrux < ageMuhtarama); //false
+const isAdultAge = ageShoxrux >= 18;
+console.log(isAdultAge);
+ */
+
+//****-----------Operator Precedence--------*****//
+/*
+const now = 2022;
+const ageShoxrux = now - 1998;
+const ageMuhtarama = now - 2003;
+
+console.log(now - 1991 > now - 2020);
+const averageAge = ageShoxrux + ageMuhtarama / 2;
+console.log(averageAge);
+ */
+/*
+Codding Challenge #1🔥
+
+Shoxrux and Shahboz are trying to compare their BMI (Body Mass Index),
+which is calculated using the formula : 
+BMI = mass / height ** 2
+BMI = mass / (height * height)
+(mass in kg height in meter).
+
+1. Stored Shoxrux's and Shahboz's mass and height in variables
+
+2. Calculate  both their BMIs using the formula 
+(you can even implement both version)
+
+3. Create a boolean variable "shoxruxHeigherBMI" containing 
+information about whether shoxrux has a higher BMI than shaxboz
+*/
+/*
+const shoxruxsMass = 90;
+const shoxruxsHeight = 1.76;
+
+const shahbozsMass = 75;
+const shahbozHeight = 1.86;
+
+const shoxruxsBMI = shoxruxsMass / shoxruxsHeight ** 2;
+const shahbozsBMI = shahbozsMass / shahbozHeight ** 2;
+
+const shoxruxHeigherBMI = shoxruxsBMI > shahbozsBMI;
+console.log(
+  "Shoxrux BMI is " + shoxruxsBMI,
+  "Shaxboz BMI is " + shahbozsBMI + " " + shoxruxHeigherBMI
+);
+ */
+
+//****---Template Literals---****/ //
+//ES6 version
+/*
+const firstName = "Shoxrux";
+const job = "programmer";
+const birthYear = 1998;
+const currentYear = 2022;
+
+//Simple example
+const shoxrux =
+  "I'm " +
+  firstName +
+  " " +
+  ",a " +
+  (currentYear - birthYear) +
+  "years old " +
+  job +
+  "!";
+console.log(shoxrux);
+
+//Template
+const shoxruxNew = `I'm ${firstName} a ${
+  currentYear - birthYear
+} years old ${job}!`;
+console.log(shoxruxNew);
+
+console.log("String with \nmultiple \nlines");
+console.log(`String with 
+multiple 
+ines`);
+ */
+
+//****---Taking Decision if-else Statements---****/ //

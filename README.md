@@ -13,8 +13,8 @@
 11. Numbers, Dates, Intl and Timers
 12. Advanced DOM and Events
 13. Object-Oriented Programming (OOP) With JavaScript
-14. Mapty App_ OOP, Geolocation, External Libraries, and More
-15. Asynchronous JavaScript_ Promises, Async_Await, and AJAX
-16. Modern JavaScript Development_ Modules, Tooling, and Functional
-17. Forkify App_ Building a Modern Application
+14. Mapty App\_ OOP, Geolocation, External Libraries, and More
+15. Asynchronous JavaScript\_ Promises, Async_Await, and AJAX
+16. Modern JavaScript Development\_ Modules, Tooling, and Functional
+17. Forkify App\_ Building a Modern Application
 18. Setting Up Git and Deployment
