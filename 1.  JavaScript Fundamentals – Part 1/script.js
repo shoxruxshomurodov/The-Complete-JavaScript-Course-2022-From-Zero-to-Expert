@@ -271,6 +271,10 @@ console.log(century + " " + "century");
 /*
 Codding Challenge #2🔥
 
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Shoxrux's BMI is higher than Shahboz's!" or "Shahboz's BMI is higher than Shoxrux's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Shoxrux's BMI (28.3) is higher than Shahboz's (23.9)!"
+HINT: Use an if/else statement 😉
 const shoxruxsMass = 90;
 const shoxruxsHeight = 1.76;
 
@@ -404,17 +408,169 @@ if (age >= 20 || age < 30) {
  */
 
 //****---Logical Operators---****//
-
+/* 
 const hasDriverLicence = true; //A
-const hasGoodVision = true; //B
+const hasGoodVision = false; //B
 
 console.log(hasDriverLicence && hasGoodVision);
 console.log(hasDriverLicence || hasGoodVision);
 console.log(!hasDriverLicence);
 
 const shouldDrive = hasDriverLicence && hasGoodVision;
-if (shouldDrive) {
+if (hasDriverLicence && hasGoodVision) {
   console.log("Muhtarama is able to drive!🚗");
 } else {
   console.log("Someone else  is able to drive 🚗");
 }
+
+const isTired = true; //C
+console.log(hasDriverLicence || hasGoodVision || isTired);
+console.log(hasDriverLicence && hasGoodVision && isTired);
+const hasDriverLicence = true; //A
+const hasGoodVision = true; //B
+const isTired = false; //C
+
+if (hasDriverLicence && hasGoodVision && !isTired) {
+  console.log("Muhtarama is able to drive!🚗");
+} else {
+  console.log("Someone else should to drive... 🚗");
+}
+*/
+
+/*
+Codding Challenge #3🔥
+
+There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins the a trophy!
+1. Calculate the average score for each team, using the test data below
+2. Compare the team's average scores to determine the winner of the competition,
+ and print it to the console. Don't forget that there can be a draw, 
+ so test for that as well (draw means they have the same average score).
+3. BONUS 1: Include a requirement for a minimum score of 100. With this rule, 
+a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points.
+ HINT: Use a logical operator to test for minimum score, as well as multiple else-if blocks 😉
+4. BONUS 2: Minimum score also applies to a draw! 
+So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy.
+TEST DATA: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+TEST DATA BONUS 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+
+const dolphinsAverage = (100 + 112 + 100) / 3;
+const koalasAverage = (100 + 112 + 100) / 3;
+
+if (dolphinsAverage > koalasAverage && dolphinsAverage >= 100) {
+  console.log(`Dolphins are winner with ${dolphinsAverage} 🏆🎉`);
+} else if (koalasAverage > dolphinsAverage && koalasAverage >= 100) {
+  console.log(`Koalas are winner with ${koalasAverage} 🏆🎉`);
+} else if (
+  dolphinsAverage === koalasAverage &&
+  dolphinsAverage >= 100 &&
+  koalasAverage >= 100
+) {
+  console.log(`Both of them winner 🏆🎉`);
+} else {
+  console.log(`No one of them are winner 😥`);
+}
+*/
+
+//****---The Switch Statement---****//
+
+//☝using only strict equality
+
+/*
+const day = prompt("What is today");
+
+switch (day) {
+  case "monday": //day==="monday"
+    console.log(`Plan course structure`);
+    break;
+  case "tuesday":
+    console.log(`Go to coding meetup`);
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log(`Prepare theory videos`);
+    break;
+  case "friday":
+    console.log(`Write code examples`);
+    break;
+  case "saturday":
+    console.log(`Record videos`);
+    break;
+  case "sunday":
+    console.log(`Enjoy rest day🎉⚽🏓`);
+    break;
+  default:
+    console.log(`Not a valid day`);
+}
+
+if (day === "monday") {
+  console.log(`Plan course structure`);
+} else if (day === "tuesday") {
+  console.log(`Go to coding meetup`);
+} else if (day === "wednesday" || day === "thursday") {
+  console.log(`Prepare theory videos`);
+} else if (day === "friday") {
+  console.log(`Write code examples`);
+} else if (day === "saturday") {
+  console.log(`Record videos 🎥`);
+} else if (day === "sunday") {
+  console.log(`Enjoy rest day🎉⚽🏓`);
+} else {
+  console.log(`Not a valid day`);
+}
+ */
+
+//****---The Conditional (Ternary) Operator---****//
+
+/*
+const age = 22;
+age >= 18
+  ? console.log(`I can drive car 🚗`)
+  : console.log(`I shoundn't drive car 🚗`);
+
+const marriage = age >= 20 ? "marriaged" : "not marriaged";
+console.log(marriage);
+
+let marriage2;
+
+if (age >= 18) {
+  console.log("marriaged");
+} else {
+  console.log("not marriaged");
+}
+
+console.log(
+  `I am ${age} years old. I ${age >= 18 ? "can" : "can't"} drive a car 🚗`
+);
+ */
+
+//****---Statements and Expressions---****//
+
+/*
+// Expression is word , Statement is sentence , consist of expression  like bunch of expression
+
+// Expression  produce value
+3 + 4; //expression
+1998; //expression
+true && false && !false; //expression
+
+// Statement does not produce value
+if (23 > 10) {
+  const str = "23 is bigger";
+}
+
+console.log(`I am ${2022 - 1998} years old.`);
+ */
+
+//****---JavaScript Releases ES5, ES6,...., ESNext---****//
+/*
+ 1995
+ Brendan Eich
+ in 10days
+ Mocha
+ 1996 - Mocha to LiveScript 
+ 1997 ECMACScript ES1
+ 2009 ES5(ECMAScript5)
+ 2015 ES6 - biggest update to the language ever!
+ 2016 - ∞∞∞
+ */
