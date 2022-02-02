@@ -85,8 +85,8 @@ console.log(age1, age2);
 // }
  */
 
-//**---Arrow Functions Declaration ---**//
-
+//**---Arrow Functions  ---**//
+/*
 //Function Expression
 const calcAge2 = function (currentYear, birthYear) {
   return currentYear - birthYear;
@@ -111,3 +111,78 @@ const yearsUntilRetire = (
 };
 
 console.log(yearsUntilRetire(2022, 2003, "Muhtarama"));
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+const fruitProcessor = (apples, oranges) => {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+  console.log(apples, oranges);
+  const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+  return juice;
+};
+
+console.log(fruitProcessor(2, 5));
+ */
+
+//**---Reviewing Functions  ---**//
+
+/*
+☝Function Decloration => that can be used before it's declared
+
+☝Function Expression => essentially a function value stored in a variable 
+
+☝Arrow Function +> Great for a quick one-line functions .
+Has no this keyword
+
+
+const calcAge = (currentYear = 2022, birthYear = 1998) => {
+  return currentYear - birthYear;
+};
+
+const yearsUntilRetire = (
+  firstName = "Shoxrux",
+  currentYear = 2022,
+  birthYear = 1998
+) => {
+  const age = calcAge(currentYear, birthYear);
+  const retirement = 65 - age;
+
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years`);
+    return retirement;
+  } else {
+    console.log(`${firstName} has already retired🎉`);
+    return -1;
+  }
+};
+
+console.log(yearsUntilRetire("Muhtarama", 2022, 2003));
+console.log(yearsUntilRetire("Shohrux", 2022, 1948));
+
+*/
+
+//**---Coding Challenge #1🔥---**//
+
+const calcAverage = function (score1, score2, score3) {
+  const average = (score1 + score2 + score3) / 3;
+  return average;
+};
+
+const scoreDolphins = calcAverage(144, 183, 171);
+const scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= avgKoalas * 2) {
+    console.log(`Dolphins win 🏆 (${avgDolphins} vs ${avgKoalas})`);
+  } else if (avgKoalas >= avgDolphins * 2) {
+    console.log(`Koalas win 🏆 (${avgKoalas} vs ${avgDolphins})`);
+  } else {
+    console.log("No team wins...");
+  }
+};
+
+checkWinner(scoreDolphins, scoreKoalas);
