@@ -165,7 +165,7 @@ console.log(yearsUntilRetire("Shohrux", 2022, 1948));
 */
 
 //**---Coding Challenge #1🔥---**//
-
+/*
 const calcAverage = function (score1, score2, score3) {
   const average = (score1 + score2 + score3) / 3;
   return average;
@@ -186,3 +186,93 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 };
 
 checkWinner(scoreDolphins, scoreKoalas);
+ */
+//**---Introduction to Array---**//
+/*
+const friend1 = "Shahboz";
+const friend2 = "Ibrohim";
+const friend3 = "Abror";
+const friend4 = "Zarif";
+const friend5 = "Ubaydulla";
+
+const friends = ["Shahboz", "Ibrohim", "Abror", "Zarif", "Ubaydulla"];
+console.log(friends);
+
+// const years = new Array(1998, 2003, 1967, 1971, 2005);
+
+//Array is zero(0) based ☝
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends[2]);
+console.log(friends[3]);
+console.log(friends[4]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Abush";
+console.log(friends);
+
+const firstName = "Shoxrux";
+const shoxrux = [firstName, "Shomurodov", 2022 - 1998, "programmer", friends];
+console.log(shoxrux);
+
+//Exercise
+
+const calcAge = function (birthYear) {
+  return 2022 - birthYear;
+};
+
+const years = [1998, 2003, 1967, 1971, 2005];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[2]);
+const age4 = calcAge(years[3]);
+const age5 = calcAge(years[4]);
+
+console.log(age1, age2, age3, age4, age5);
+
+ */
+//**---Array Methods---**//
+
+const friends = ["Shahboz", "Ibrohim", "Abror", "Zarif", "Ubaydulla"];
+
+//Add Elements
+//push() add element in the end
+friends.push("Humoyun");
+console.log(friends);
+
+//unshift() add element in the beginning
+friends.unshift("Ramazon");
+console.log(friends);
+
+//Remove elements
+//pop() remove element in the end
+friends.pop();
+console.log(friends);
+
+//shift() remove element in the beginning
+friends.shift();
+console.log(friends);
+
+//Other methods
+console.log(friends.indexOf("Zarif"));
+console.log(friends.includes("Ilhom")); //false //strict equality
+console.log(friends.includes("Abror")); //true //strict equality
+
+if (friends.includes("Shahboz")) {
+  console.log("I hava a friend called Shahboz");
+}
+
+//**---Coding Challenge #2🔥---**//
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+const bills = [125, 555, 44];
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(tips);
+console.log(totals);
