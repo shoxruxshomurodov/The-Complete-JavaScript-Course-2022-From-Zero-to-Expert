@@ -25,7 +25,7 @@ const private = 998; //Uncaught SyntaxError: Unexpected strict mode reserved wor
  */
 
 //**---Functions---**//
-
+/*
 function logger() {
   console.log("My name is Shoxrux");
 }
@@ -41,7 +41,7 @@ function fruitProcessor(apples, oranges) {
 }
 const appleJuice = fruitProcessor(5, 0);
 console.log(appleJuice);
-// console.log(fruitProcessor(5, 0));
+console.log(fruitProcessor(5, 0));
 
 // const fruitProcessor = (apples, oranges) => {
 //   console.log(apples, oranges);
@@ -54,3 +54,60 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
+ */
+
+//**---Functions Declaration & Function Expression---**//
+
+//Functions Declaration
+
+//Function is Value not type
+/*
+function calcAge1(currentYear, birthYear) {
+  return currentYear - birthYear;
+}
+const age1 = calcAge1(2021, 1998);
+
+//Functions Expression
+const calcAge2 = function (currentYear, birthYear) {
+  return currentYear - birthYear;
+};
+const age2 = calcAge1(2021, 2003);
+
+console.log(age1, age2);
+
+//Main differencce between function declaration and expression is
+//In function declaration you can define them before they are defined
+
+// const age1 = calcAge1(2021, 1998);
+
+// function calcAge1(currentYear, birthYear) {
+//   return currentYear - birthYear;
+// }
+ */
+
+//**---Arrow Functions Declaration ---**//
+
+//Function Expression
+const calcAge2 = function (currentYear, birthYear) {
+  return currentYear - birthYear;
+};
+const age2 = calcAge2(2021, 1967);
+console.log(age2);
+
+//Arrow function
+const calcAge3 = (currentYear, birthYear) => currentYear - birthYear;
+const age3 = calcAge3(2021, 2003);
+
+console.log(age3);
+
+const yearsUntilRetire = (
+  currentYear = 2022,
+  birthYear = 1998,
+  firstName = "Shoxrux"
+) => {
+  const age = currentYear - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years`;
+};
+
+console.log(yearsUntilRetire(2022, 2003, "Muhtarama"));
