@@ -234,7 +234,7 @@ console.log(age1, age2, age3, age4, age5);
 
  */
 //**---Array Methods---**//
-
+/*
 const friends = ["Shahboz", "Ibrohim", "Abror", "Zarif", "Ubaydulla"];
 
 //Add Elements
@@ -263,9 +263,10 @@ console.log(friends.includes("Abror")); //true //strict equality
 if (friends.includes("Shahboz")) {
   console.log("I hava a friend called Shahboz");
 }
+ */
 
 //**---Coding Challenge #2🔥---**//
-
+/*
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
@@ -276,3 +277,82 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(tips);
 console.log(totals);
+ */
+
+//**---Objects---**//
+
+/*
+const shoxruxArray = [
+  "Shoxrux",
+  "Shomurodov",
+  2022 - 1998,
+  "programmer",
+  ["Shahboz", "Ibrohim", "Abror", "Zarif", "Ubaydulla"],
+];
+
+const shoxrux = {
+  firstName: "Shoxrux",
+  lastName: "Shomurodov",
+  age: 2022 - 1998,
+  job: "programmer",
+  friends: ["Shahboz", "Ibrohim", "Abror", "Zarif", "Ubaydulla"],
+};
+ */
+
+//**---Objects Dot vs. Bracket Notation---**//
+/*
+const shoxrux = {
+  firstName: "Shoxrux",
+  lastName: "Shomurodov",
+  age: 2022 - 1998,
+  job: "programmer",
+  friends: ["Shahboz", "Ibrohim", "Abror", "Zarif", "Ubaydulla"],
+};
+
+console.log(shoxrux);
+
+console.log(shoxrux.lastName);
+console.log(shoxrux["lastName"]);
+
+const nameKey = "Name";
+console.log(shoxrux["first" + nameKey]);
+console.log(shoxrux["last" + nameKey]);
+
+// const interestedIn = prompt("What do you want to know about Shoxrux ?");
+// console.log(shoxrux[interestedIn]);
+
+console.log(
+  `Shoxrux has ${shoxrux.friends.length}, and his best friend is called ${shoxrux.friends[0]}`
+);
+
+ */
+
+//**---Objects Methods---**//
+
+const shoxrux = {
+  firstName: "Shoxrux",
+  lastName: "Shomurodov",
+  birthYear: 1998,
+  job: "programmer",
+  friends: ["Shahboz", "Ibrohim", "Abror", "Zarif", "Ubaydulla"],
+  hasDriversLicence: true,
+  calcAge0: function (birthYear) {
+    return 2022 - birthYear;
+  },
+
+  calcAge1: function (birthYear) {
+    return 2022 - shoxrux.birthYear;
+  },
+  calcAge2: function () {
+    return 2022 - this.birthYear;
+  },
+};
+
+console.log(shoxrux.calcAge0(1998));
+console.log(shoxrux["calcAge0"](1998));
+
+console.log(shoxrux.calcAge1());
+console.log(shoxrux["calcAge1"]());
+
+console.log(shoxrux.calcAge2());
+console.log(shoxrux["calcAge2"]());
