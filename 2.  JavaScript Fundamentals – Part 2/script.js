@@ -336,23 +336,49 @@ const shoxrux = {
   job: "programmer",
   friends: ["Shahboz", "Ibrohim", "Abror", "Zarif", "Ubaydulla"],
   hasDriversLicence: true,
-  calcAge0: function (birthYear) {
-    return 2022 - birthYear;
-  },
 
-  calcAge1: function (birthYear) {
-    return 2022 - shoxrux.birthYear;
-  },
+  // calcAge0: function (birthYear) {
+  //   return 2022 - birthYear;
+  // },
+
+  // calcAge1: function (birthYear) {
+  //   return 2022 - shoxrux.birthYear;
+  // },
   calcAge2: function () {
     return 2022 - this.birthYear;
   },
+  calcAge3: function () {
+    console.log(this);
+
+    this.age = 2022 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.age} years old programmer, and he ${
+      this.hasDriversLicence ? "has" : "hasn't"
+    } driver's licence`;
+  },
 };
 
-console.log(shoxrux.calcAge0(1998));
-console.log(shoxrux["calcAge0"](1998));
+// console.log(shoxrux.calcAge0(1998));
+// console.log(shoxrux["calcAge0"](1998));
 
-console.log(shoxrux.calcAge1());
-console.log(shoxrux["calcAge1"]());
+// console.log(shoxrux.calcAge1());
+// console.log(shoxrux["calcAge1"]());
 
-console.log(shoxrux.calcAge2());
-console.log(shoxrux["calcAge2"]());
+// console.log(shoxrux.calcAge2());
+// console.log(shoxrux["calcAge2"]());
+console.log(shoxrux.calcAge3());
+console.log(shoxrux.age);
+console.log(shoxrux["age"]);
+
+//Challenge
+//"Shoxrux is a 24 years old programmer, and he has a driver's licence "
+
+console.log(
+  `${shoxrux.firstName} is a ${shoxrux.age} years old programmer, and he ${
+    shoxrux.hasDriversLicence ? "has a" : "hasn't"
+  } driver's licence`
+);
+
+console.log(shoxrux.getSummary());
