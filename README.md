@@ -1,7 +1,7 @@
 # The-Complete-JavaScript-Course
 
 1.  JavaScript Fundamentals Part 1 ✔🎉
-2.  JavaScript Fundamentals Part 2
+2.  JavaScript Fundamentals Part 2 ✔🎉
 3.  How to Navigate This Course ✔🎉
 4.  Developer Skills & Editor Setup
 5.  HTML & CSS Crash Course
