@@ -395,7 +395,7 @@ Let's go back to Mark and John comparing their BMIs! This time, let's use object
 TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
 GOOD LUCK 😀
 */
-
+/*
 const shoxrux = {
   fullName: "Shoxrux Shomurodov",
   height: 1.69,
@@ -429,4 +429,93 @@ if (shoxrux.bmi > shahboz.bmi) {
   console.log(
     `${shahboz.fullName}'s BMI:(${shahboz.bmi}) is hiegher than ${shoxrux.fullName}'s BMI (${shoxrux.bmi}) `
   );
+}
+*/
+
+//**---Loops---**//
+
+/*
+console.log("Lefting weights repition 1 🏋️‍♂️");
+console.log("Lefting weights repition 2 🏋️‍♂️");
+console.log("Lefting weights repition 3 🏋️‍♂️");
+console.log("Lefting weights repition 4 🏋️‍♂️");
+console.log("Lefting weights repition 5 🏋️‍♂️");
+console.log("Lefting weights repition 6 🏋️‍♂️");
+console.log("Lefting weights repition 7 🏋️‍♂️");
+console.log("Lefting weights repition 8 🏋️‍♂️");
+console.log("Lefting weights repition 9 🏋️‍♂️");
+console.log("Lefting weights repition 10 🏋️‍♂️");
+
+//for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 20; rep++) {
+  console.log(`Lefting weights repition ${rep} 🏋️‍♂️`);
+}
+
+const types = [];
+const shoxruxArray = [
+  "Shoxrux",
+  "Shomurodov",
+  2022 - 1998,
+  "programmer",
+  ["Shahboz", "Ibrohim", "Abror", "Zarif", "Ubaydulla"],
+];
+
+for (let i = 0; i < shoxruxArray.length; i++) {
+  console.log(shoxruxArray[i], typeof shoxruxArray[i]);
+  // types[i] = typeof shoxruxArray[i];
+  types.push(typeof shoxruxArray[i]);
+}
+
+console.log(types);
+
+const years = [1967, 1971, 1998, 2003];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages[i] = 2022 - years[i];
+}
+console.log(ages);
+
+//continue and break
+
+console.log(`---ONLY STRINGS`);
+for (let i = 0; i < shoxruxArray.length; i++) {
+  if (typeof shoxruxArray[i] !== "string") continue;
+  console.log(shoxruxArray[i], typeof shoxruxArray[i]);
+}
+
+console.log(`---ONLY NUMBER`);
+for (let i = 0; i < shoxruxArray.length; i++) {
+  if (typeof shoxruxArray[i] !== "number") continue;
+  console.log(shoxruxArray[i], typeof shoxruxArray[i]);
+}
+
+console.log(`---BREAK with numbers`);
+for (let i = 0; i < shoxruxArray.length; i++) {
+  if (typeof shoxruxArray[i] === "number") break;
+  console.log(shoxruxArray[i], typeof shoxruxArray[i]);
+}
+ */
+
+//**---Looping Backward and Loops in Loops---**//
+
+const shoxruxArray = [
+  "Shoxrux",
+  "Shomurodov",
+  2022 - 1998,
+  "programmer",
+  ["Shahboz", "Ibrohim", "Abror", "Zarif", "Ubaydulla"],
+  true,
+];
+
+//0, 1, ....., 4
+for (let i = shoxruxArray.length - 1; i >= 0; i--) {
+  console.log(i, shoxruxArray[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`----------Starting exercise ${exercise}`);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise} Lefting weight repitition ${rep} 🏋️‍♂️ `);
+  }
 }
