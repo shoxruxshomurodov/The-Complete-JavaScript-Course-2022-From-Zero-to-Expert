@@ -1,7 +1,5 @@
 "use strict";
 
-//**---Destructuring Arrays ---**//
-
 const restaurant = {
   name: "Classico Italiano",
   location: "Via Angelo Tavanti 23, Firenze, Italy",
@@ -14,6 +12,8 @@ const restaurant = {
   },
 };
 
+//**---Destructuring Arrays ---**//
+/*
 const arr = [2, 3, 4];
 const a = arr[0];
 const b = arr[1];
@@ -61,3 +61,6 @@ console.log(i, j, k); //2 5 6
 
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r); //8 9 1
+ */
+
+//**---Destructuring Objects ---**//
