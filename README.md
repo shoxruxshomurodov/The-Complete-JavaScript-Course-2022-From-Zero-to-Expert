@@ -3,8 +3,8 @@
 1.  JavaScript Fundamentals Part 1 ✔🎉
 2.  JavaScript Fundamentals Part 2 ✔🎉
 3.  How to Navigate This Course ✔🎉
-4.  Developer Skills & Editor Setup
-5.  HTML & CSS Crash Course
+4.  Developer Skills & Editor Setup ✔🎉
+5.  HTML & CSS Crash Course ✔🎉
 6.  JavaScript in the Browser DOM and Events Fundamentals
 7.  How JavaScript Works Behind the Scenes
 8.  Data Structures, Modern Operators and Strings
