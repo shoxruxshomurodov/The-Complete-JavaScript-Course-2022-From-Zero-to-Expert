@@ -23,6 +23,16 @@ const restaurant = {
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
+  orderDelivery: function ({
+    starterIndex = 1,
+    mainIndex = 0,
+    time = "20:00",
+    address,
+  }) {
+    console.log(
+      `Order receieved ! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivred to ${address} at ${time} `
+    );
+  },
 };
 
 //**---Destructuring Arrays ---**//
@@ -72,15 +82,13 @@ console.log(i, j, k); //2 5 6
 // const [p, q, r] = [8, 9];
 // console.log(p, q, r); //8 9 undefined
 
-const [p = 1, q = 1, r = 1] = [8, 9];
-console.log(p, q, r); //8 9 1
+// const [p = 1, q = 1, r = 1] = [8, 9];
+// console.log(p, q, r); //8 9 1
  */
-
 //**---Destructuring Objects ---**//
 /*
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories); //{thu: {…}, fri: {…}, sat: {…}} (4) ['Italian', 'Pizzeria', 'Vegetarian', 'Organic']
- */
 
 const {
   name: restaurantName,
@@ -112,5 +120,30 @@ console.log(a, b); //23,7
 const {
   fri: { open: o, close: c },
 } = openingHours;
-console.log(open, close);
+console.log(o, c);
 // 11 23
+
+restaurant.orderDelivery({
+  time: "22:30",
+  address: "Yunusota 20",
+  mainIndex: 2,
+  starterIndex: 2,
+});
+
+restaurant.orderDelivery({
+  address: "Yunusota 20",
+});
+ */
+
+//**---The Spread Operator (...) ---**//
+
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr); //[1, 2, 7, 8, 9]
+
+const newGoodArr = [1, 2, 3, 4, ...arr];
+console.log(newGoodArr); //[1, 2, 3, 4, 7, 8, 9]
+
+console.log(...newGoodArr); //1 2 3 4 7 8 9
+
+const newMenu = [...restaurant.mainMenu];
