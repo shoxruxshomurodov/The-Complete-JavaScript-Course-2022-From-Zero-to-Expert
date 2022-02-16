@@ -5,7 +5,9 @@
 3.  How to Navigate This Course ✔🎉
 4.  Developer Skills & Editor Setup ✔🎉
 5.  HTML & CSS Crash Course ✔🎉
-6.  JavaScript in the Browser DOM and Events Fundamentals
+6.  JavaScript in the Browser DOM and Events Fundamentals :
+    1)=> Guess My Number https://guess-number2022.netlify.app
+    2)=> Window Modal https://window-modal2022.netlify.app
 7.  How JavaScript Works Behind the Scenes
 8.  Data Structures, Modern Operators and Strings
 9.  A Closer Look at Functions
